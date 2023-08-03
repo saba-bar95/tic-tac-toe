@@ -43,6 +43,8 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin: auto;
+  width: 60%;
 }
 
 .gameboard-controller h1 {
@@ -62,6 +64,10 @@ body {
   gap: 5px;
   flex-direction: column;
   align-items: center;
+}
+
+.controller-btns .btn-container:nth-of-type(2) {
+  align-self: end;
 }
 
 .controller-btns .btn-container p {
@@ -106,9 +112,54 @@ body {
   transition-duration: 0.2s;
 }
 
-/* ===========  GAMEBOARD */
+/* ===========  GAMEBOARD CONTAINER */
 
 .gameboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gameboard-container .game-info {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 50%;
+  gap: 15px;
+}
+
+.game-info .player-para {
+  font-size: 2em;
+}
+
+.game-info .player-sign {
+  font-size: 1.5em;
+}
+
+.game-info .players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.game-info .turn-div {
+  flex: 1;
+  display: flex;
+}
+
+.game-info .turn-btn {
+  padding: 5px 10px;
+  border: 0;
+  font-family: inherit;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  color: #ea580c;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+.gameboard-grid {
   max-width: 400px;
   background-color: #fcd34d;
   padding: 30px 50px;
@@ -127,7 +178,7 @@ body {
   border: 1px solid #111827;
   padding: 15px;
   border-radius: 25px;
-  font-size: 4.5em;
+  font-size: 3.5em;
   display: grid;
   justify-items: center;
 }

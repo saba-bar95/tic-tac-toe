@@ -16,8 +16,8 @@
           <div class="btn-container">
             <p>Player 1</p>
             <div>
-              <button class="sign-btn player-1">X</button>
-              <button class="sign-btn player-1">O</button>
+              <button class="sign-btn">X</button>
+              <button class="sign-btn">O</button>
             </div>
           </div>
           <div class="btn-container">
@@ -26,13 +26,26 @@
           <div class="btn-container">
             <p>Player 2</p>
             <div>
-              <button class="sign-btn player-2">X</button>
-              <button class="sign-btn player-2">O</button>
+              <button class="sign-btn">X</button>
+              <button class="sign-btn">O</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="gameboard-container hidden"></div>
+      <div class="gameboard-container hidden">
+        <div class="game-info">
+          <div class="players player-1">
+            <p class="player-para">Player 1</p>
+          </div>
+          <div class="turn-div">
+            <button class="turn-btn">TURN</button>
+          </div>
+          <div class="players player-2">
+            <p class="player-para">Player 2</p>
+          </div>
+        </div>
+        <div class="gameboard-grid"></div>
+      </div>
     </div>
   </body>
 </html>
