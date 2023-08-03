@@ -49,6 +49,7 @@ body {
 
 .gameboard-controller h1 {
   font-size: 2.5em;
+  text-transform: capitalize;
 }
 
 .controller-btns {
@@ -72,6 +73,7 @@ body {
 
 .controller-btns .btn-container p {
   font-size: 1.8em;
+  text-transform: uppercase;
 }
 
 .controller-btns .btn-container div {
@@ -104,6 +106,7 @@ body {
   font-weight: 700;
   font-family: inherit;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .start-btn:hover {
@@ -130,6 +133,7 @@ body {
 
 .game-info .player-para {
   font-size: 2em;
+  text-transform: uppercase;
 }
 
 .game-info .player-sign {
@@ -145,7 +149,7 @@ body {
 
 .game-info .turn-div {
   flex: 1;
-  display: flex;
+  display: grid;
 }
 
 .game-info .turn-btn {
@@ -157,6 +161,22 @@ body {
   color: #ea580c;
   background-color: transparent;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.game-info .restart-btn {
+  border: 0;
+  background-color: transparent;
+  font-size: 2.5em;
+  font-family: inherit;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 700;
+  justify-self: center;
+}
+
+.game-info .restart-btn:hover {
+  cursor: pointer;
 }
 
 .gameboard-grid {
