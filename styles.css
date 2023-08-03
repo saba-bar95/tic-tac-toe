@@ -19,7 +19,7 @@ body {
   display: none !important;
 }
 
-.chosen {
+.selected {
   background-color: #fb923c !important;
 }
 
@@ -50,14 +50,20 @@ body {
 .gameboard-controller h1 {
   font-size: 2.5em;
   text-transform: capitalize;
+  letter-spacing: 0.05em;
 }
 
 .controller-btns {
-  display: flex;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
   width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
+}
+
+.controller-btns .starter-div {
+  grid-row: 1/3;
+  grid-column: 2;
+  align-self: center;
 }
 
 .controller-btns .btn-container {
@@ -65,10 +71,6 @@ body {
   gap: 5px;
   flex-direction: column;
   align-items: center;
-}
-
-.controller-btns .btn-container:nth-of-type(2) {
-  align-self: end;
 }
 
 .controller-btns .btn-container p {
@@ -171,8 +173,9 @@ body {
   font-family: inherit;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   justify-self: center;
+  color: #334155;
 }
 
 .game-info .restart-btn:hover {
@@ -195,14 +198,25 @@ body {
 .gameboard-item {
   min-height: 100px;
   background-color: #fde68a;
+  color: #334155;
   border: 1px solid #111827;
   padding: 15px;
   border-radius: 25px;
   font-size: 3.5em;
   display: grid;
   justify-items: center;
+  user-select: none;
 }
 
 .gameboard-item:hover {
   scale: 1.02;
+}
+
+.winner-div {
+  background-color: #bef264;
+  scale: 1.02;
+  font-size: 3.7em;
+  transition-duration: 1.3s;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
