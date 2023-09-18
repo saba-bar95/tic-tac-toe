@@ -16,4 +16,3 @@ The traditional Tic Tac Toe game with functionalities to match.
 ### Author
 
 - [GitHub](https://github.com/saba-bar95)
-- [Coderbyte](https://coderbyte.com/profile/gegewp)
